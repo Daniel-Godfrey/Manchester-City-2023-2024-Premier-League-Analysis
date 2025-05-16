@@ -5,25 +5,32 @@ The Manchester City Premier League 2023/2024 Analysis project is a comprehensive
 
 **Project Overview**
 
-This Power BI project provides an in-depth analysis of Manchester City's performance during the 2023/2024 English Premier League (EPL) season. The dashboard visualizes key metrics, offering insights into the team's match outcomes, goal statistics, performance at home and away, and more.
+This project presents an interactive HR Analytics Dashboard built with Power BI, designed to provide key insights into workforce data such as employee demographics, job satisfaction, department composition, service years, and job levels. It allows HR professionals to make data-driven decisions by exploring employee-related metrics at a glance.
 
-**Key Performance Indicators (KPIs)**
 
-The analysis focuses on the following KPIs:
+**Features**
 
-•	Match Outcomes (Win/Draw/Loss) Breakdown: Displays the number of wins, draws, and losses, along with their respective percentages.
+**•  Employee Demographics**
+Breakdown of employees by gender, marital status, and education field.
 
-•	Total Goals Scored vs. Conceded: Compares the total goals scored by Manchester City to the goals conceded across the season.
+**•  Service Years Overview**
+Visual distribution of employees based on years of service (1 to 10+ years).
 
-•	Average Goals per Game: Shows the average number of goals scored per match.
+**•  Job Level Distribution**
+Count of employees across various job levels from Level 1 to Level 5.
 
-•	Goal Difference: Tracks the cumulative goal difference over the course of the season.
+**•  On-Service vs. Lay-Off Status**
+Department-wise comparison of active vs. laid-off employees.
 
-•	Home vs. Away Performance: Compares the team's performance in home and away matches.
+**•  Employee Distance Status**
+Categorization based on proximity to the workplace (Very Close, Close, Very Far).
 
-•	Opposition Analysis: Breaks down goals scored and conceded against each opponent.
+**•  Job Satisfaction by Role**
+Insight into satisfaction levels across roles like Research Scientist, Sales Executive, Managers, etc.
 
-•	Top goal scorer, top assist, the team best player of the season and the winning head coach
+**•  Education Field Analysis**
+View of employee distribution by educational background.
+
 
 
 **DAX Analysis**
@@ -56,13 +63,23 @@ GOALS CONCEDED = SUM('EPL'[GOAL_AGAINST])
 AVG GOAL/MATCH = DIVIDE([GOALS SCORED], [MATCHES PLAYED], 0)
 
 
-**Visualizations**
+**Getting Started**
+To explore or modify the dashboard:
+1.  Open Power BI Desktop.
+2.  Load the .pbix file (if available).
+3.  If working with raw data:
+    •  Import the dataset via Excel.
+    •  Recreate visualizations using Power BI.
 
-**•	Match Outcomes Wins/Draws/Losses:** A card visualization showing the total number of wins, draws, and losses. Win/Draw/Loss Breakdown: A donut chart visualizing the percentage breakdown of wins, draws, and losses.
+**Use Cases**
+•  HR Decision Making
+•  Workforce Planning
+•  Employee Satisfaction Monitoring
+•  Recruitment and Retention Analysis
+•  Internal Reporting
 
-**•	Total Goals Scored vs. Conceded Clustered Column Chart:** Comparing the total goals scored and goals conceded across the season, with match outcome on the x-axis and the number of goals on the y-axis.
+**Preview**
+See attached HR ANALYSIS DASHBOARD.pdf for a snapshot of the dashboard visuals.
 
-**•	Home vs. Away Performance Stacked Bar Chart:** Comparing the results in home versus away games, filtered by the venue.
-
-•	Slicer to filter by venue.
-
+**Feedback & Contributions**
+Feel free to fork the repo, raise issues, or contribute improvements. Feedback and suggestions are welcome!
